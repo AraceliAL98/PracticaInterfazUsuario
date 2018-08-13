@@ -1,0 +1,29 @@
+﻿<Window x:Class="PracticaInterfazUsuario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaInterfazUsuario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="521.809" Width="905.319">
+    <Grid>
+        <TextBlock x:Name="lblTotal" HorizontalAlignment="Left" Margin="23,23,0,0" TextWrapping="Wrap" Text="Total:" VerticalAlignment="Top" RenderTransformOrigin="-5.565,-11.495" Width="807"/>
+        <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="23" Margin="23,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="867" RenderTransformOrigin="0.5,0.5" TextChanged="txtTotal_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.044"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Slider x:Name="sldPorcentajePropina" HorizontalAlignment="Left" Margin="23,89,0,0" VerticalAlignment="Top" Height="23" Width="864" Maximum="19" SmallChange="1" ValueChanged="sldPorcentajePropina_ValueChanged"/>
+        <TextBlock x:Name="lblPorcentajePropina" HorizontalAlignment="Left" Margin="777,118,0,0" TextWrapping="Wrap" Text="0%" VerticalAlignment="Top" Height="27" Width="120"/>
+        <TextBlock x:Name="lblPropina" HorizontalAlignment="Left" Margin="23,155,0,0" TextWrapping="Wrap" Text="Propina:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbl_propina" HorizontalAlignment="Left" Margin="181,155,0,0" TextWrapping="Wrap" Text="$0" VerticalAlignment="Top" RenderTransformOrigin="1.529,0.595"/>
+        <TextBlock x:Name="lblTotalPropina" HorizontalAlignment="Left" Margin="23,208,0,0" TextWrapping="Wrap" Text="Total con Propina" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblResultadoTotalConPropina" HorizontalAlignment="Left" Margin="181,211,0,0" TextWrapping="Wrap" Text="$0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
